@@ -1,0 +1,4 @@
+name: RoomEffects
+version: ${p.version}
+main: net.betterverse.RoomEffects.Main
+description: Scan an area for a set of blocks
