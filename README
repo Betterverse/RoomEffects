@@ -1,0 +1,7 @@
+RoomEffects plugin for Bukkit.
+
+RoomEffects allows you to create a formation of certain blocks, all within a certain distance away from eachother, to trigger some sort of event.
+
+Dev:
+To add a new room, create a new class extending net.betterverse.RoomEffects.Scanner and in the constructor of that class, set the required blocks and amounts, and the scan limit. Use a command, or listener to trigger the scan checkRoom, which returns a success boolean.
+Create a new instance of this class from Main, registering events/commands as required.
