@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
     
     public static Configuration config;
-    public static HashMap<String, String> weatherRoomOpts = new HashMap<>();
+    public static HashMap<String, String> weatherRoomOpts = new HashMap<String, String>();
     private boolean weatherRoomEnabled;
     
     @Override

@@ -9,16 +9,16 @@ import org.bukkit.block.Block;
 public class Scanner {
     
     //Blocks to scan
-    protected HashMap<Material, Integer> blocks = new HashMap<>();
+    protected HashMap<Material, Integer> blocks = new HashMap<Material, Integer>();
     protected int limit;
     
     public boolean checkRoom(Block start) {
-        List<Block> initial = new ArrayList<>();
+        List<Block> initial = new ArrayList<Block>();
         int startx = start.getX() - limit, starty = start.getY() - limit, startz = start.getZ() - limit;
         int endx = start.getX() + limit, endy = start.getY() + limit, endz = start.getZ() + limit;
         
         //Populate initial list of blocks, populate amount hashmap
-        HashMap<Material, Integer> temp = new HashMap<>();
+        HashMap<Material, Integer> temp = new HashMap<Material, Integer>();
         for (int xop = startx; xop <= endx; xop++) {
             for (int yop = starty; yop <= endy; yop++) {
                 for (int zop = startz; zop <= endz; zop++) {
@@ -50,7 +50,7 @@ public class Scanner {
     
     private boolean hasBlocks(List<Block> blocklist) {
         for (Block start : blocklist) {
-            List<Block> found = new ArrayList<>();
+            List<Block> found = new ArrayList<Block>();
             int startx = start.getX() - limit, starty = start.getY() - limit, startz = start.getZ() - limit;
             int endx = start.getX() + limit, endy = start.getY() + limit, endz = start.getZ() + limit;
 
